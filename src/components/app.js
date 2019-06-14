@@ -34,7 +34,7 @@ class App extends React.Component{
 		const foundCards = this.state.cards.map((card) => {
 			return(
 
-				<div className = "card" style = {{width:'18rem'}}>
+				<div className = "card" style = {{width:'18rem',margin:'3px'}} key={card.key}>
 					<div className = "card-body">
 						<h3 className = "card-title">{card.title}</h3>
 						<h6 className = "card-subtitle mb-2 text-muted">-{card.author}</h6>
