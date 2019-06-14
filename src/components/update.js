@@ -16,7 +16,6 @@ class Update extends React.Component{
 
 	onFormSubmit = (event) =>{
 		event.preventDefault();
-		console.log(this.state);
 		const {title, author, status} = this.state;
 		const ref = firebase.firestore().collection('cards').doc(this.props.match.params.id);
 		ref.set({
