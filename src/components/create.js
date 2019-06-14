@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {Link} from 'react-router-dom';
 
 import firebase from '../Firebase';
 
@@ -50,6 +48,7 @@ class Create extends React.Component{
 	render(){
 		return(
 			<div className="container">
+				<h1>Create document</h1>
 				<form onSubmit = {this.onFormSubmit}>
 					<div className="form-group">
 					    <label forhtml="Title">Title</label>
