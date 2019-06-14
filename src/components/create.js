@@ -17,7 +17,6 @@ class Create extends React.Component{
 
 	onFormSubmit = (event) =>{
 		event.preventDefault();
-		// console.log(this.state);
 		const {title, author, status} = this.state;
 		this.ref.add({
 			title,
@@ -42,7 +41,14 @@ class Create extends React.Component{
 		const state = this.state;
 		state[event.target.name] = event.target.value;
 		this.setState(state);
-		// console.log(state);
+	}
+
+	componentDidMount = () => {
+		this.setState({
+			title : '',
+			author  : '',
+			status : ''
+			});
 	}
 
 	render(){

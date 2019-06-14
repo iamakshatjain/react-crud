@@ -60,10 +60,10 @@ class App extends React.Component{
 	render = () => {
 		return(
 			<div className = 'container'>
-				<h1>What's on your mind?😉🐱‍🏍</h1>
-				<p>This is the only place where people read your thoughts!😂🙂😏🙄🤐🤑😬😰😨</p>
-				<p>Write your heart❤ out and let everybody read it. Express yourself here!</p>
-				<p>And best part is,Nobody would hate you here.😁</p>
+				<h1>What's on your mind?<span role="img" aria-label="emoji">😉🐱‍🏍</span></h1>
+				<p>This is the only place where people read your thoughts!<span role="img" aria-label="emoji">😂🙂😏🙄🤐🤑😬😰😨</span></p>
+				<p>Write your heart<span role="img" aria-label="emoji">❤</span> out and let everybody read it. Express yourself here!</p>
+				<p>And best part is,Nobody would hate you here.<span role="img" aria-label="emoji">😁</span></p>
 				<Link to="/create"><button style = {{margin:'3px'}} className="btn btn-primary btn-lg btn-block">Create post</button></Link>
 				<br/>
 				<div className = "row">
